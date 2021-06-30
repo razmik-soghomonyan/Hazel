@@ -2,8 +2,7 @@
 
 #include "Hazel/Core.h"
 
-#include <string>
-#include <functional>
+
 
 namespace Hazel
 {
@@ -73,7 +72,7 @@ namespace Hazel
 		Event& m_Event;
 	};
 
-	inline std::ostream& operator<<(std::ostream& os, Event& e)
+	inline std::ostream& operator<< (std::ostream& os, const Event& e)
 	{
 		return os << e.ToString();
 	}
